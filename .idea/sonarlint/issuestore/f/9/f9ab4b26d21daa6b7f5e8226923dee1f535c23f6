@@ -1,0 +1,11 @@
+
+9
+java:S1700"Rename field "bigBoard"(Òƒ©¼ûÿÿÿÿ8¹¤Å’/
+v
+java:S3012W"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(€Úª8ˆÇÚ’/
+{
+java:S3012E"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(Òú£“ûÿÿÿÿ8ˆÇÚ’/
+o
+java:S3776."RRefactor this method to reduce its Cognitive Complexity from 63 to the 15 allowed.(½ÒÏ·8ˆÇÚ’/
+{
+java:S30123"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(‚Õùøÿÿÿÿ8ˆÇÚ’/
