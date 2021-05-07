@@ -133,4 +133,8 @@ public class BigBoard {
     public String getTextToTextField(int coordinate1, int coordinate2) {
         return String.valueOf(bigBoard[coordinate1][coordinate2]);
     }
+
+    public void setBigBoard(Number zero) {
+        bigBoard[zero.getX()][zero.getY()] = 0;
+    }
 }

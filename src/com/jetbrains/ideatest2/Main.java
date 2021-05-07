@@ -7,7 +7,6 @@ import javafx.geometry.Pos;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
-
 import javafx.scene.layout.*;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
@@ -107,11 +106,11 @@ public class Main extends Application {
                                 textField.setEditable(false);
                             }
                             textFields[x][y] = textField;
-                            textField.setOnMouseClicked(e -> {
-                                textFields[x][y].setStyle("-fx-pref-width: 2em;-fx-background-color: DarkGray;");
-                            });
+
                             textField.setOnKeyPressed(e -> {
                                 textFields[x][y].setStyle("-fx-pref-width: 2em;-fx-background-color: White;");
+                                Number zero = new Number(x,y,0);
+                                sudoku.setBigBoard(zero);
                             });
                             textField.setOnKeyTyped(e -> {
                                 if (Character.isDigit(e.getCharacter().charAt(0))) {
@@ -122,10 +121,8 @@ public class Main extends Application {
                                         textFields[x][y].setStyle("-fx-pref-width: 2em;-fx-background-color: SpringGreen;");
                                     } else {
                                         textFields[x][y].setStyle("-fx-pref-width: 2em;-fx-background-color: LightPink;");
-
                                     }
                                 }
-
                             });
                             GridPane.setConstraints(textField, column, row);
                             box.getChildren().add(textField);
