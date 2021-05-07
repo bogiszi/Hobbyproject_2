@@ -108,7 +108,7 @@ public class Main extends Application {
                             textFields[x][y] = textField;
 
                             textField.setOnKeyPressed(e -> {
-                                textFields[x][y].setStyle("-fx-pref-width: 2em;-fx-background-color: White;");
+                                textFields[x][y].setStyle("-fx-pref-width: 2em;");
                                 Number zero = new Number(x,y,0);
                                 sudoku.setBigBoard(zero);
                             });
